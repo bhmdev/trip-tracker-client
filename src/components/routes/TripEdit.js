@@ -19,7 +19,7 @@ const TripEdit = props => {
     })
       // Make sure to update this.setState to our hooks setMovie function
       .then(res => setTrip(res.data.trip))
-      .catch(console.error)
+      .catch()
   }, [])
 
   const handleChange = event => {
@@ -40,7 +40,7 @@ const TripEdit = props => {
       data: { trip }
     })
       .then(() => setUpdatedTrip(true))
-      .catch(console.error)
+      .catch()
   }
   if (updatedTrip) {
     return <Redirect to={`/trips/${props.match.params.id}`} />

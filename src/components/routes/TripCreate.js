@@ -26,7 +26,7 @@ const TripCreate = props => {
       data: { trip }
     })
       .then(res => setCreatedTripId(res.data.trip._id))
-      .catch(console.error)
+      .catch()
   }
 
   if (createdTripId) {

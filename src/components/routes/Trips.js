@@ -17,7 +17,7 @@ const Trips = props => {
       }
     })
       .then(res => setTrips(res.data.trips))
-      .catch(console.error)
+      .catch()
   }, [])
 
   const tripsJsx = trips.map(trip => (

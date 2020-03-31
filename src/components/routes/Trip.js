@@ -21,7 +21,7 @@ const Trip = props => {
     })
       // Make sure to update this.setState to our hooks setMovie function
       .then(res => setTrip(res.data.trip))
-      .catch(console.error)
+      .catch()
   }, [])
   useEffect(() => {
     // This will only run when the compnent will unmount
@@ -45,7 +45,7 @@ const Trip = props => {
       }
     })
       .then(() => setDeleted(true))
-      .catch(console.error)
+      .catch()
   }
   if (!trip) {
     return <p>Loading test...</p>
