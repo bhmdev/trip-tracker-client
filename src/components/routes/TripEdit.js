@@ -36,7 +36,8 @@ const TripEdit = props => {
       method: 'PATCH',
       headers: {
         'Authorization': `Bearer ${props.user.token}`
-      }
+      },
+      data: { trip }
     })
       .then(() => setUpdatedTrip(true))
       .catch(console.error)
