@@ -51,6 +51,7 @@ const TripEdit = props => {
         trip={trip}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
+        cancelPath={`/trips/${props.match.params.id}`}
       />
     </Layout>
   )
