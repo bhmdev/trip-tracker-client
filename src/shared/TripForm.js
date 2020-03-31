@@ -1,5 +1,22 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import styled, { css } from 'styled-components'
+
+const Button = styled.button`
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+
+  ${props =>
+    props.primary &&
+    css`
+      background: palevioletred;
+      color: white;
+    `};
+`
 
 const TripForm = ({ trip, handleSubmit, handleChange, cancelPath }) => (
   <form onSubmit={handleSubmit}>
@@ -36,7 +53,10 @@ const TripForm = ({ trip, handleSubmit, handleChange, cancelPath }) => (
       onChange={handleChange}
     />
 
-    <button type="submit">Submit</button>
+    <Button type="submit">Submit</Button>
+    <Link to={cancelPath}>
+      <Button primary>Cancel</Button>
+    </Link>
   </form>
 )
 
