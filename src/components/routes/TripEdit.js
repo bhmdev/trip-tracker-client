@@ -32,7 +32,7 @@ const TripEdit = props => {
   const handleSubmit = event => {
     event.preventDefault()
     axios({
-      url: `${apiUrl}/trips/${props.match.params._id}`,
+      url: `${apiUrl}/trips/${props.match.params.id}`,
       method: 'PATCH',
       headers: {
         'Authorization': `Bearer ${props.user.token}`
@@ -43,7 +43,7 @@ const TripEdit = props => {
       .catch(console.error)
   }
   if (updatedTrip) {
-    return <Redirect to={`/trips/${props.match.params._id}`} />
+    return <Redirect to={`/trips/${props.match.params.id}`} />
   }
   return (
     <Layout>
