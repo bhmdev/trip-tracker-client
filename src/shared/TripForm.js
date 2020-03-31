@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const TripForm = ({ trip, handleSubmit, handleChange, cancelPath }) => (
   <form onSubmit={handleSubmit}>
@@ -37,9 +37,6 @@ const TripForm = ({ trip, handleSubmit, handleChange, cancelPath }) => (
     />
 
     <button type="submit">Submit</button>
-    <Link to={cancelPath}>
-      <button>Cancel</button>
-    </Link>
   </form>
 )
 
