@@ -11,7 +11,6 @@ const Trip = props => {
   // Call this callback once after the first render, this only occurs once
   // because our dependency array is empty, so our dependencies never change
   // similar to componentDidMount
-  console.log(props)
   useEffect(() => {
     axios({
       url: `${apiUrl}/trips/${props.match.params.id}`,
@@ -28,7 +27,6 @@ const Trip = props => {
     // This will only run when the compnent will unmount
     // because the dependency array is empty
     return () => {
-      console.log('The trip is going to disappear')
     }
   }, [])
   useEffect(() => {
@@ -36,7 +34,6 @@ const Trip = props => {
     // 1. the component is about to unmount
     // 2. before the 2nd and following renders
     return () => {
-      console.log('Calling cleanup')
     }
   })
   const destroy = () => {
