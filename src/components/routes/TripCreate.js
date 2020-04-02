@@ -33,7 +33,6 @@ const TripCreate = props => {
         variant: 'create'
       }))
       .catch(() => {
-        this.setState({ email: '', password: '' })
         props.msgAlert({
           heading: 'Create Trip Failed',
           message: messages.createTripFailure,
