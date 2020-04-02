@@ -8,5 +8,6 @@ export default {
   changePasswordFailure: 'Failed to change passwords. Check your old password and try again.',
   deleteSuccess: 'Your trip was deleted!',
   createSuccess: 'Your trip was created',
-  updateSuccess: 'Your trip has been changed to your speicifications'
+  updateSuccess: 'Your trip has been changed to your speicifications',
+  createTripFailure: 'Your trip has not been created'
 }

@@ -32,9 +32,15 @@ const TripCreate = props => {
         message: messages.createSuccess,
         variant: 'create'
       }))
-      .catch()
+      .catch(() => {
+        this.setState({ email: '', password: '' })
+        props.msgAlert({
+          heading: 'Create Trip Failed',
+          message: messages.createTripFailure,
+          variant: 'danger'
+        })
+      })
   }
-
   if (createdTripId) {
     return <Redirect to={`/trips/${createdTripId}`} />
   }
