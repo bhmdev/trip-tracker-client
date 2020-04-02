@@ -5,6 +5,7 @@ import axios from 'axios'
 import apiUrl from '../../apiConfig'
 import TripForm from '../../shared/TripForm'
 import Layout from '../../shared/Layout'
+import messages from '../AutoDismissAlert/messages'
 
 const TripCreate = props => {
   const [trip, setTrip] = useState({ trip: '', date: '', country: '', city: '', description: '' })
@@ -26,6 +27,11 @@ const TripCreate = props => {
       data: { trip }
     })
       .then(res => setCreatedTripId(res.data.trip._id))
+      .then(() => props.msgAlert({
+        heading: 'Create Success',
+        message: messages.createSuccess,
+        variant: 'create'
+      }))
       .catch()
   }
 
