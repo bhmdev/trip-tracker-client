@@ -5,6 +5,7 @@ import axios from 'axios'
 import apiUrl from '../../apiConfig'
 import TripForm from '../../shared/TripForm'
 import Layout from '../../shared/Layout'
+import messages from '../AutoDismissAlert/messages'
 
 const TripEdit = props => {
   const [trip, setTrip] = useState({ trip: '', date: '', country: '', city: '', description: '' })
@@ -40,6 +41,11 @@ const TripEdit = props => {
       data: { trip }
     })
       .then(() => setUpdatedTrip(true))
+      .then(() => props.msgAlert({
+        heading: 'You have successfully updated your trip',
+        message: messages.updateSuccess,
+        variant: 'update'
+      }))
       .catch()
   }
   if (updatedTrip) {

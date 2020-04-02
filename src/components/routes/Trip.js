@@ -4,6 +4,7 @@ import axios from 'axios'
 
 import apiUrl from '../../apiConfig'
 import Layout from '../../shared/Layout'
+import messages from '../AutoDismissAlert/messages'
 
 const Trip = props => {
   const [trip, setTrip] = useState(null)
@@ -45,15 +46,21 @@ const Trip = props => {
       }
     })
       .then(() => setDeleted(true))
+      .then(() => props.msgAlert({
+        heading: 'Delete Success',
+        message: messages.deleteSuccess,
+        variant: 'delete'
+      }))
       .catch()
   }
+
   if (!trip) {
     return <p>Loading test...</p>
   }
   if (deleted) {
     return <Redirect to={
-      { pathname: '/', state: { msg: 'Trip succesfully deleted!' } }
-    } />
+      { pathname: '/trips' }
+    }/>
   }
   if (trip.owner === props.user._id) {
     return (
