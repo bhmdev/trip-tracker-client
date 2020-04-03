@@ -55,22 +55,22 @@ class App extends Component {
             <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
           <Route exact path='/' component={Home} />
-          <AuthenticatedRoute exact user={user} path='/sign-out' render={() => (
+          <AuthenticatedRoute user={user} exact path='/sign-out' render={() => (
             <SignOut msgAlert={this.msgAlert} clearUser={this.clearUser} user={user} />
           )} />
-          <AuthenticatedRoute exact user={user} path='/change-password' render={() => (
+          <AuthenticatedRoute user={user} exact path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute exact user={user} path='/trips' render={() => (
+          <AuthenticatedRoute user={user} exact path='/trips' render={() => (
             <Trips msgAlert={this.msgAlert} clearUser={this.clearUser} user={user} />
           )} />
-          <AuthenticatedRoute exact user={user} path='/trips/:id' render={({ match }) => (
+          <AuthenticatedRoute user={user} exact path='/trips/:id' render={({ match }) => (
             <Trip msgAlert={this.msgAlert} user={user} match={match}/>
           )} />
-          <AuthenticatedRoute exact user={user} path='/trips/:id/edit' render={({ match }) => (
+          <AuthenticatedRoute user={user} exact path='/trips/:id/edit' render={({ match }) => (
             <TripEdit msgAlert={this.msgAlert} clearUser={this.clearUser} user={user} match={match} />
           )} />
-          <AuthenticatedRoute exact user={user} path='/create-trip' render={() => (
+          <AuthenticatedRoute user={user} exact path='/create-trip' render={() => (
             <TripCreate msgAlert={this.msgAlert} user={user} />
 
           )} />
