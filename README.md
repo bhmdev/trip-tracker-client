@@ -82,7 +82,7 @@ Decided to make success/failure messages.
 **Unsolved Issues & Future Goals**
 
 - Better Styling 
-- 3rd party APi would like to be implemented
+- 3rd party API would like to be implemented
 - Search Bar
 
 **Author**
