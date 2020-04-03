@@ -54,7 +54,8 @@ Back-end:
 
 **Screenshot of the App**
 
-<img width="1154" alt="Screen Shot 2020-04-02 at 11 45 08 PM" src="https://media.git.generalassemb.ly/user/25655/files/06c1ae80-753e-11ea-97bd-a926bcb333dc">
+<img width="1437" alt="Screen Shot 2020-04-03 at 2 05 08 AM" src="https://media.git.generalassemb.ly/user/25655/files/8dcb5280-754f-11ea-8001-ea3ad253c974">
+
 
 **User Stories**
 
