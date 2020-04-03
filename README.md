@@ -54,6 +54,8 @@ Back-end:
 
 **Screenshot of the App**
 
+<img width="1154" alt="Screen Shot 2020-04-02 at 11 45 08 PM" src="https://media.git.generalassemb.ly/user/25655/files/06c1ae80-753e-11ea-97bd-a926bcb333dc">
+
 ![Image of Yaktocat](/imgur.com/iPQfmsZ)
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/iPQfmsZ"><a href="//imgur.com/iPQfmsZ">Capstone Image</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
