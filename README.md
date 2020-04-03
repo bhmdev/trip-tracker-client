@@ -60,7 +60,7 @@ Back-end:
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/iPQfmsZ" data-context="false" ><a href="//imgur.com/a/iPQfmsZ">Capstone Image</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-[Imgur](https://i.imgur.com/UJHdN1u.png)
+[Capstone Screenshot](https://i.imgur.com/UJHdN1u.png)
 
 **User Stories**
 
