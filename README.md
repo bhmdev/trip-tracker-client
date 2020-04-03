@@ -54,6 +54,8 @@ Back-end:
 
 **Screenshot of the App**
 
+![Image of Yaktocat](/imgur.com/iPQfmsZ)
+
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/iPQfmsZ"><a href="//imgur.com/iPQfmsZ">Capstone Image</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 
