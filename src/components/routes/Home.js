@@ -1,15 +1,20 @@
 import React from 'react'
-import Layout from '../../shared/Layout'
 import Logo from '../../globe2.png'
+import styled from 'styled-components'
+
+const Styled = styled.div`
+  text-align: center;
+
+`
 
 const Home = () => (
-  <div>
-    <Layout>
+  <Styled>
+    <div>
       <h4>Welcome to Trip Tracker!</h4>
-      <h6>This is where you can schedule a trip around the globe, just click sign Up to begin</h6>
-    </Layout>
+      <h6>This is where you can schedule a trip around the globe</h6>
+    </div>
     <img src={Logo} alt="A Globe" />
-  </div>
+  </Styled>
 )
 
 export default Home

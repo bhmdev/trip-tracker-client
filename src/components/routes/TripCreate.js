@@ -4,7 +4,6 @@ import axios from 'axios'
 
 import apiUrl from '../../apiConfig'
 import TripForm from '../../shared/TripForm'
-import Layout from '../../shared/Layout'
 import messages from '../AutoDismissAlert/messages'
 
 const TripCreate = props => {
@@ -45,14 +44,14 @@ const TripCreate = props => {
   }
 
   return (
-    <Layout>
+    <div>
       <TripForm
         trip={trip}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         cancelPath="/"
       />
-    </Layout>
+    </div>
   )
 }
 

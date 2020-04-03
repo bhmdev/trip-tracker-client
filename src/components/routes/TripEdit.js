@@ -4,7 +4,6 @@ import axios from 'axios'
 
 import apiUrl from '../../apiConfig'
 import TripForm from '../../shared/TripForm'
-import Layout from '../../shared/Layout'
 import messages from '../AutoDismissAlert/messages'
 
 const TripEdit = props => {
@@ -52,14 +51,14 @@ const TripEdit = props => {
     return <Redirect to={`/trips/${props.match.params.id}`} />
   }
   return (
-    <Layout>
+    <div>
       <TripForm
         trip={trip}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         cancelPath={`/trips/${props.match.params.id}`}
       />
-    </Layout>
+    </div>
   )
 }
 export default TripEdit

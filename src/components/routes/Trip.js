@@ -3,7 +3,6 @@ import { Link, Redirect } from 'react-router-dom'
 import axios from 'axios'
 
 import apiUrl from '../../apiConfig'
-import Layout from '../../shared/Layout'
 import messages from '../AutoDismissAlert/messages'
 
 const Trip = props => {
@@ -64,7 +63,7 @@ const Trip = props => {
   }
   if (trip.owner === props.user._id) {
     return (
-      <Layout>
+      <div>
         <h4>Where are you going?</h4>
         <p>Date of trip: {trip.date}</p>
         <p>Country: {trip.country}</p>
@@ -75,18 +74,18 @@ const Trip = props => {
           <button>Edit</button>
         </Link>
         <Link to="/trips">Back to all trips</Link>
-      </Layout>
+      </div>
     )
   }
   return (
-    <Layout>
+    <div>
       <h4>Where are you going?</h4>
       <p>Date of trip: {trip.date}</p>
       <p>Country: {trip.country}</p>
       <p>City: {trip.city}</p>
       <p>Description: {trip.description}</p>
       <Link to="/trips">Back to all trips</Link>
-    </Layout>
+    </div>
   )
 }
 

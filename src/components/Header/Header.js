@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import styled from 'styled-components'
+import Layout from '../../shared/Layout'
 
 const authenticatedOptions = (
   <Fragment>
@@ -9,6 +10,16 @@ const authenticatedOptions = (
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
     <Nav.Link href="#create-trip">Add Trip</Nav.Link>
   </Fragment>
+)
+const authorizedBody = (
+  <div>
+    <Layout/>
+  </div>
+)
+
+const unauthorizedBody = (
+  <div>
+  </div>
 )
 
 const unauthenticatedOptions = (
@@ -46,6 +57,7 @@ const Header = ({ user }) => (
     </Navbar>
     <SecondNav>
     </SecondNav>
+    { !user ? unauthorizedBody : authorizedBody}
   </div>
 )
 

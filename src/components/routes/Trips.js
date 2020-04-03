@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 import apiUrl from '../../apiConfig'
-import Layout from '../../shared/Layout'
 
 const Trips = props => {
   const [trips, setTrips] = useState([])
@@ -27,12 +26,12 @@ const Trips = props => {
   ))
 
   return (
-    <Layout>
+    <div>
       <h4>Trips</h4>
       <ul>
         {tripsJsx}
       </ul>
-    </Layout>
+    </div>
   )
 }
 
